@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require 'pry'
 
 require_relative "../lib/jukebox"
 
@@ -14,6 +15,6 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-
+binding.pry
 
 run(songs)
