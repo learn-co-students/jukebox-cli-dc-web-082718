@@ -13,7 +13,7 @@ songs = [
 ]
 
 def help
-binding.pry
+
   puts "I accept the following commands:
 - help : displays this help message
 - list : displays a list of songs you can play
@@ -24,7 +24,7 @@ end
 
 
 def list array
-  binding.pry
+
   array.each_with_index { |song, i|
     puts "#{i+1}. #{song}"
   }
@@ -33,6 +33,7 @@ end
 
 
 def play array
+
   puts "Please enter a song name or number:"
   response = gets.chomp
 
@@ -53,6 +54,7 @@ def exit_jukebox
 end
 
 def run array
+  songs = array
   help
   response = ""
 
