@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require 'pry'
 
-require_relative "../lib/jukebox"
+# require_relative "../lib/jukebox"
+require_relative "../lib/advanced_jukebox"
 
 songs = [
   "Phoenix - 1901",
@@ -15,5 +16,15 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+my_songs = {
+  "Go Go GO" => '~/Development/learning/jukebox-cli-dc-web-082718/audio/Emerald-Park/01.mp3',
+  "LiberTeens" => '~/Development/learning/jukebox-cli-dc-web-082718/audio/Emerald-Park/02.mp3',
+  "Hamburg" =>  '~/Development/learning/jukebox-cli-dc-web-082718/audio/Emerald-Park/03.mp3',
+  "Guiding Light" => '~/Development/learning/jukebox-cli-dc-web-082718/audio/Emerald-Park/04.mp3',
+  "Wolf" => '~/Development/learning/jukebox-cli-dc-web-082718/audio/Emerald-Park/05.mp3',
+  "Blue" => '~/Development/learning/jukebox-cli-dc-web-082718/audio/Emerald-Park/06.mp3',
+  "Graduation Failed" => '~/Development/learning/jukebox-cli-dc-web-082718/audio/Emerald-Park/07.mp3'
+}
 
-run(songs)
+
+run(my_songs)
