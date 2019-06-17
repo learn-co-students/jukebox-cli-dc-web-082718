@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
+require 'pry'
 
+# require_relative "../lib/jukebox"
 require_relative "../lib/jukebox"
 
 songs = [
@@ -13,7 +15,6 @@ songs = [
   "Harry Chapin - Cats in the Cradle",
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
-
 
 
 run(songs)
